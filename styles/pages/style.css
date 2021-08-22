@@ -38,6 +38,9 @@
 .header.sticky::before{
     transform: translateY(0%);
 }
+.header .container{
+    padding-bottom: 0px;
+}
 .header .logo{
     min-height: 34px;
     display: flex;
@@ -156,20 +159,75 @@
 }
 .home-section .min-vh-100{
     padding: 100px 0 ;
+    position: relative;
 }
 .home-text{
-    padding: 0 15px;
-    max-width: 700px;
-    width: 100%;
-    margin: auto;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
     text-align: center;
+    max-width: 700px;
 }
 .home-text h1{
     font-family:  var(--cursive-font);
     font-size: 60px;
     line-height: 75px;
     margin: 0 0 5px;
+    font-weight: 700;
+    color: var(--white) ;
 }
 .home-text p{
     margin: 0 0 30px;
+}
+/* About section */
+.about-section{
+    background-color: var(--dark);
+}
+
+.about-section .content{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 60px;
+}
+.about-section .content .content-left{
+    width: 55%;
+    line-height: 30px;
+    margin-right: 40px;
+}
+.about-section .content .content-left .text-title{
+    text-align: left;
+    padding-top: 0px;
+}
+.about-section .content .content-left p{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.about-section .content .content-right{
+    width: 45%;
+    position: relative;
+}
+
+.about-section .content .content-right p{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    color: var(--dark);
+    font-family: var(--cursive-font);
+    font-size: 25px;
+    font-weight: 500;
+}
+.about-section .content .content-right div{
+    border: 3px solid var(--main-color);
+    padding: 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    animation: spin 10s linear infinite;   
+}
+/* Our menu section */
+.our-menu-section{
+    background-color: var(--dark);
 }

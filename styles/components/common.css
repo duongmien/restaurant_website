@@ -18,6 +18,7 @@ img{
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 .row{
   display: flex;
@@ -38,10 +39,7 @@ ul{
 .min-vh-100{
   min-height: 100vh;
 }
-h1{
-  font-weight: 700;
-  color: var(--white) ;
-}
+
 .btn{
   display: inline-block;
   padding: 10px 30px;
@@ -71,5 +69,30 @@ h1{
   }
   50%{
     transform: scale(1.1);
+  }
+}
+.title-section{
+  font-family: var(--cursive-font);
+  text-align: center;
+  font-size: 20px;
+  padding-top: 30px;
+  color: var(--main-color);
+  text-transform: capitalize;
+}
+.text-title{
+  font-size: 30px;
+  color: var(--white);
+  text-transform: capitalize;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+@keyframes spin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
   }
 }
