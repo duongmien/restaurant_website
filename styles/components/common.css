@@ -98,6 +98,7 @@ ul {
   font-size: 35px;
   text-transform: capitalize;
   color: var(--white);
+  font-weight: bold;
 }
 .section-title h2::before{
   content: attr(data-title);
