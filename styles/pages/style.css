@@ -315,3 +315,53 @@
 .menu-item:hover .menu-item-price{
     color: var(--white);
 }
+
+/* Testimonials section */
+.testimonials-section{
+    background-color: var(--dark);
+}
+.testimonials-section .testi-item{
+    width: 30%;
+    margin: 0 15px 30px;
+    border: 2px solid var(--dark-light);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    box-sizing: border-box;
+}
+.testimonials-section .testi-author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonials-section .testi-author h3{
+    font-size: 16px;
+    text-transform:capitalize;
+    margin: 0 0 3px;
+    font-weight: bold;
+    color: var(--white);
+}
+.testimonials-section .testi-author span{
+    display: block;
+    font-size: 14px;
+    text-transform:capitalize;
+}
+.testimonials-section .testi-author img{
+    max-width: 60px;
+    border-radius: 50%;
+    border: 3px solid var(--dark-light);
+    box-shadow: var(--shadow);
+    transition: border-color 0.5s ease;
+}
+.testimonials-section .testi-item p{
+    margin: 15px 0;
+    color: var(--white-light);
+}
+.testimonials-section .testi-item:hover .testi-author img {
+    border-color:var(--main-color) ;
+}
+.testimonials-section .testi-item i{
+    font-size: 16px;
+    color: var(--main-color);
+}
