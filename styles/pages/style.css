@@ -182,32 +182,36 @@
 }
 /* About section */
 .about-section{
-    background-color: var(--dark);
+    background-color: var(--dark-light);
 }
 
 .about-section .content{
     display: flex;
     justify-content: space-around;
-    padding-top: 60px;
 }
 .about-section .content .content-left{
-    width: 55%;
+    width: 50%;
     line-height: 30px;
     margin-right: 40px;
 }
-.about-section .content .content-left .text-title{
-    text-align: left;
-    padding-top: 0px;
+.about-section .content .content-left h1{
+    font-size: 28px;
+    text-transform: capitalize;
+    color: var(--white);
+    font-weight: 600;
+    margin: 0 0 15px;
 }
 .about-section .content .content-left p{
     padding-top: 10px;
     padding-bottom: 20px;
 }
-.about-section .content .content-right{
-    width: 45%;
+.about-section  .content-right{
+    width: 50%;
     position: relative;
 }
-
+.about-section .content .content-right img{
+    border-radius: 10px;
+}
 .about-section .content .content-right p{
     position: absolute;
     transform: translate(-50%,-50%);
@@ -215,19 +219,73 @@
     left: 50%;
     color: var(--dark);
     font-family: var(--cursive-font);
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 30px;
+    font-weight: bold;
+    text-transform:capitalize;
 }
-.about-section .content .content-right div{
+.about-section .content .content-right .box {
     border: 3px solid var(--main-color);
-    padding: 40px;
+    height: 100px;
+    width: 100px;
     position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
     left: 50%;
-    animation: spin 10s linear infinite;   
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: spin 10s linear infinite;  
+    box-sizing: border-box; 
 }
 /* Our menu section */
-.our-menu-section{
+.menu-section{
     background-color: var(--dark);
+}
+.menu-section .section-title{
+    margin-bottom: 40px;
+}
+.menu-section .menu-tabs{
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.menu-section .menu-tab-item{
+    font-size: 18px;
+    font-family: inherit;
+    text-transform:capitalize;
+    border: none;
+    background-color: transparent;
+    font-weight: 500;
+    color: var(--white);
+    cursor: pointer;
+    margin: 0 10px 10px;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+.menu-section .menu-tab-item.active{
+    color: var(--main-color);
+}
+.menu-item{
+    width: 50%;
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-item-title{
+    display: flex;
+    align-items: center;
+}
+.menu-item-title h3{
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: color 0.3 ease;
+}
+.menu-item-title img{
+    max-width: 100px;
+    margin-right: 15px;
+}
+.menu-item-price{
+    font-size: 16px;
+    font-weight: 500 ;
+    color: var(--main-color);
+    transition: color 0.3s ease;
 }
