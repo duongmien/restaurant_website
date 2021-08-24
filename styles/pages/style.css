@@ -151,6 +151,7 @@
     height: 100%;
     width: 100%;
     background-image: url(../../assets/imgs/home-bg.jpg);
+    -webkit-background-size: cover;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
