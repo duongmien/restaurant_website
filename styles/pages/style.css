@@ -498,8 +498,22 @@
     }
   }
 @media(max-width:320px){
-    .home-section .home-text h1{
-        font-size: 20px;
-        line-height: 50px;
-      }
+    .about-section .content-left,  .about-section .content-right {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+      .team-section .team-item{
+        width: 100%;
+        margin-bottom: 75px;
+    }
+    .team-section .team-item:not(:last-child){
+        margin-bottom: 75px;
+    }
+    .footer .footer-item{
+        width: 100%;
+        margin-bottom: 75px;
+    }
+    .footer .footer-item:not(:last-child){
+        margin-bottom: 75px;
+    }
 }
