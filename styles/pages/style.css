@@ -473,6 +473,31 @@
     border-top: 1px solid var(--white-light);
 }
 /* Responsive */
+@media(max-width: 991px){
+    .home-section .home-text h1{
+      font-size: 45px;
+      line-height: 50px;
+    }
+    .about-section .content-left,.about-section .content-right, .menu-item{
+        width: 100%;
+    }
+    .about-section .content-right{
+        margin-top: 40px;
+    }
+    .menu-item:nth-last-of-type(2):after{
+        border-bottom: 2px dashed var(--dark-light);
+    }
+    .testimonials-section .testi-item{
+        width: 100%;
+    }
+    .team-section .team-item{
+        width: 45%;
+        margin-bottom: 75px;
+    }
+    .team-section .team-item:not(:last-child){
+        margin-bottom: 75px;
+    }
+  }
 @media(max-width: 768px){
     .home-section .home-text h1{
       font-size: 45px;
@@ -502,6 +527,9 @@
     .about-section .content-left,  .about-section .content-right {
         margin-left: 10px;
         margin-right: 10px;
+    }
+    .about-section .content-right p{
+        font-size: 19px;
     }
       .team-section .team-item{
         width: 100%;
