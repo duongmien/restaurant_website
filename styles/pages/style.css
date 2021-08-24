@@ -420,6 +420,7 @@
     background-attachment: fixed;
     background-position: center;
     position: relative;
+    z-index: -1;
 }
 .footer::before{
     content: '';
@@ -430,6 +431,7 @@
     height: 100%;
     background-color: rgba(0,0,0.7);
     opacity: 0.7;
+    z-index: -1;
 }
 .footer .footer-item{
     width: 30%;
