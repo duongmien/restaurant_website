@@ -500,6 +500,9 @@
     }
   }
 @media(max-width: 768px){
+    .home-section .home-bg{
+        background-attachment:scroll
+    }
     .home-section .home-text h1{
       font-size: 45px;
       line-height: 50px;
