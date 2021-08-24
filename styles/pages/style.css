@@ -436,6 +436,7 @@
     width: 30%;
     padding: 0 15px;
     text-align: center;
+    box-sizing: border-box;
 }
 .footer .footer-item h1{
     text-transform:capitalize;
@@ -512,9 +513,9 @@
     }
     .footer .footer-item{
         width: 100%;
-        margin-bottom: 75px;
+        margin-bottom: 30px;
     }
     .footer .footer-item:not(:last-child){
-        margin-bottom: 75px;
+        margin-bottom: 30px;
     }
 }
