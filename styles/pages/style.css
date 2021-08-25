@@ -480,14 +480,11 @@
       font-size: 45px;
       line-height: 50px;
     }
-    .about-section .content-left,.about-section .content-right, .menu-item{
+    .about-section .content-left,.about-section .content-right{
         width: 100%;
     }
     .about-section .content-right{
         margin-top: 40px;
-    }
-    .menu-item:nth-last-of-type(2):after{
-        border-bottom: 2px dashed var(--dark-light);
     }
     .testimonials-section .testi-item{
         width: 100%;
@@ -532,6 +529,10 @@
     }
     .about-section .content-right p{
         font-size: 19px;
+    }
+    .about-section .content-right .box{
+        width: 70px;
+        height: 70px;
     }
       .team-section .team-item{
         width: 100%;

@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="shortcut icon" type="image/x-icon" href="./assets/imgs/menu/1.jpg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <link rel="stylesheet" href="./styles/components/reset.css">
+  <link rel="stylesheet" href="./styles/components/aos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <link rel="stylesheet" href="./styles/components/common.css">
   <link rel="stylesheet" href="./styles/pages/style.css">
   <title>Dine Out Restaurant</title>
@@ -15,7 +16,7 @@
 
 <body>
   <!-- Header start -->
-  <header class="header">
+  <header class="header" >
     <div class="container">
       <div class="row justify-content-between align-items-center">
         <div class="logo">
@@ -42,7 +43,7 @@
   <section class="home-section" id="home">
     <div class="home-bg"></div>
     <div class="container">
-      <div class="row min-vh-100">
+      <div class="row min-vh-100" data-aos="fade-up" data-aos-duration="1500">
         <div class="home-text">
           <h1>Dine Out Restaurant</h1>
           <p>Have a fun evening! We are happy to serve you</p>
@@ -56,12 +57,12 @@
   <section class="about-section sec-padding" id="about">
     <div class="container">
       <div class="row">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2 data-title="our story">about us</h2>
         </div>
       </div>
       <div class="row">
-        <div class="content-left">
+        <div class="content-left"  data-aos="fade-right">
           <h1>welcome to dine out restaurant</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam placeat aliquam sunt at, incidunt deserunt
             molestiae, amet natus provident nobis magni numquam! Quibusdam provident modi repellendus hic voluptas
@@ -71,7 +72,7 @@
             ad quo!</p>
           <a href="#our-menu" class="btn btn-default">check our menu</a>
         </div>
-        <div class="content-right">
+        <div class="content-right"  data-aos="fade-left">
           <div class="box"></div>
           <img src="./assets/imgs/about-img.jpg" alt="">
           <p>20+ years experience</p>
@@ -85,21 +86,21 @@
   <section class="menu-section sec-padding" id="our-menu">
     <div class="container">
       <div class="row">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2 data-title="order now">our menu</h2>
         </div>
       </div>
       <div class="row">
-        <div class="menu-tabs">
+        <div class="menu-tabs" data-aos="fade-up">
           <button type="button" class="menu-tab-item active" data-target="#lunch">lunch</button>
           <button type="button" class="menu-tab-item" data-target="#dinner">dinner</button>
           <button type="button" class="menu-tab-item" data-target="#drinks">drinks</button>
           <button type="button" class="menu-tab-item" data-target="#desserts">desserts</button>
         </div>
       </div>
-      <div class="row menu-tab-content active" id="lunch">
+      <div class="row menu-tab-content active" id="lunch" >
         <div class="menu-item">
-          <div class="menu-item-title">
+          <div class="menu-item-title" data-aos="fade-right">
             <img src="./assets/imgs/menu/1.jpg" alt="menu item thumbnail">
             <h3>lunch item</h3>
           </div>
@@ -107,7 +108,7 @@
             $40.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-left">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/2.jpg" alt="menu item thumbnail">
             <h3>lunch item</h3>
@@ -116,7 +117,7 @@
             $40.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-right">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/3.jpg" alt="menu item thumbnail">
             <h3>lunch item</h3>
@@ -125,7 +126,7 @@
             $40.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-left">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/4.jpg" alt="menu item thumbnail">
             <h3>lunch item</h3>
@@ -134,7 +135,7 @@
             $40.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-right">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/5.jpg" alt="menu item thumbnail">
             <h3>lunch item</h3>
@@ -143,7 +144,7 @@
             $40.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-left">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/6.jpg" alt="menu item thumbnail">
             <h3>lunch item</h3>
@@ -152,7 +153,7 @@
             $40.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-right">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/7.jpg" alt="menu item thumbnail">
             <h3>lunch item</h3>
@@ -161,7 +162,7 @@
             $40.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-left">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/8.jpg" alt="menu item thumbnail">
             <h3>lunch item</h3>
@@ -172,7 +173,7 @@
         </div>
       </div>
       <div class="row menu-tab-content" id="dinner">
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-right">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/1.jpg" alt="menu item thumbnail">
             <h3>dinner item</h3>
@@ -181,7 +182,7 @@
             $30.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-left">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/4.jpg" alt="menu item thumbnail">
             <h3>dinner item</h3>
@@ -190,7 +191,7 @@
             $30.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-right">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/8.jpg" alt="menu item thumbnail">
             <h3>dinner item</h3>
@@ -199,9 +200,18 @@
             $30.00
           </div>
         </div>
+        <div class="menu-item" data-aos="fade-left">
+          <div class="menu-item-title">
+            <img src="./assets/imgs/menu/1.jpg" alt="menu item thumbnail">
+            <h3>dinner item</h3>
+          </div>
+          <div class="menu-item-price">
+            $20.00
+          </div>
+        </div>
       </div>
       <div class="row menu-tab-content" id="drinks">
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-right">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/8.jpg" alt="menu item thumbnail">
             <h3>drink item</h3>
@@ -210,7 +220,7 @@
             $10.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-left">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/2.jpg" alt="menu item thumbnail">
             <h3>drink item</h3>
@@ -219,7 +229,16 @@
             $10.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-right">
+          <div class="menu-item-title">
+            <img src="./assets/imgs/menu/4.jpg" alt="menu item thumbnail">
+            <h3>drink item</h3>
+          </div>
+          <div class="menu-item-price">
+            $10.00
+          </div>
+        </div>
+        <div class="menu-item" data-aos="fade-left">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/5.jpg" alt="menu item thumbnail">
             <h3>drink item</h3>
@@ -230,7 +249,7 @@
         </div>
       </div>
       <div class="row menu-tab-content" id="desserts">
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-right">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/7.jpg" alt="menu item thumbnail">
             <h3>desserts item</h3>
@@ -239,7 +258,7 @@
             $15.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-left">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/2.jpg" alt="menu item thumbnail">
             <h3>desserts item</h3>
@@ -248,7 +267,7 @@
             $17.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-right">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/8.jpg" alt="menu item thumbnail">
             <h3>desserts item</h3>
@@ -257,7 +276,7 @@
             $20.00
           </div>
         </div>
-        <div class="menu-item">
+        <div class="menu-item" data-aos="fade-left">
           <div class="menu-item-title">
             <img src="./assets/imgs/menu/3.jpg" alt="menu item thumbnail">
             <h3>desserts item</h3>
@@ -275,12 +294,12 @@
   <section class="testimonials-section sec-padding" id="testimonials">
     <div class="container">
       <div class="row">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2 data-title="testimonials">some feedbacks</h2>
         </div>
       </div>
       <div class="row">
-        <div class="testi-item">
+        <div class="testi-item" data-aos="zoom-in" data-aos-duration="800">
           <div class="testi-author">
             <div class="testi-author-name">
               <h3>mie duong</h3>
@@ -300,7 +319,7 @@
             <i class="fas fa-star"></i>
           </div>
         </div>
-        <div class="testi-item">
+        <div class="testi-item" data-aos="zoom-in" data-aos-duration="800">
           <div class="testi-author">
             <div class="testi-author-name">
               <h3>duy nguyen</h3>
@@ -320,7 +339,7 @@
             <i class="fas fa-star"></i>
           </div>
         </div>
-        <div class="testi-item">
+        <div class="testi-item" data-aos="zoom-in" data-aos-duration="800">
           <div class="testi-author">
             <div class="testi-author-name">
               <h3>mien cute</h3>
@@ -348,26 +367,26 @@
   <section class="team-section sec-padding" id="team">
     <div class="container">
       <div class="row">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2 data-title="team">our chefs</h2>
         </div>
       </div>
       <div class="row">
-        <div class="team-item">
+        <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
           <img src="./assets/imgs/team/1.jpg" alt="">
           <div class="team-item-info">
             <h2>Alex Mie</h2>
             <p>head chef</p>
           </div>
         </div>
-        <div class="team-item">
+        <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
           <img src="./assets/imgs/team/2.jpg" alt="">
           <div class="team-item-info">
             <h2>Alex Mie</h2>
             <p>head chef</p>
           </div>
         </div>
-        <div class="team-item">
+        <div class="team-item" data-aos="flip-left" data-aos-duration="1000">
           <img src="./assets/imgs/team/3.jpg" alt="">
           <div class="team-item-info">
             <h2>Alex Mie</h2>
@@ -382,15 +401,15 @@
   <footer class="footer" id="contact">
     <div class="container">
       <div class="row">
-        <div class="footer-item">
+        <div class="footer-item"  data-aos="fade-up">
           <h1>our locartion</h1>
           <p>Tran Hung Dao Street, sector-12, <br>USA -000 ****</p>
         </div>
-        <div class="footer-item">
+        <div class="footer-item"  data-aos="fade-up">
           <h1>opening hours</h1>
           <p>Monday to Sunday <br>9:00 AM -10:00PM</p>
         </div>
-        <div class="footer-item">
+        <div class="footer-item"  data-aos="fade-up">
           <h1>contact us</h1>
           <p>91 9654 293</p>
           <p>info@gmail.com</p>
@@ -410,6 +429,7 @@
     </div>
   </footer>
   <!-- Footer end -->
+  <script src="./scripts/aos.js"></script>
   <script src="scripts/script.js"></script>
 </body>
 
