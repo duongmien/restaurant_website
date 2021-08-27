@@ -12,7 +12,30 @@
     --cursive-font: 'Dancing Script', cursive;
     scroll-behavior: smooth;
 }
- 
+/* Page loader */
+.page-loader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--dark);
+    z-index: 9999;
+}
+.page-loader.fade-out{
+    opacity: 0;
+}
+.page-loader::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 100px;
+    background-color: var(--main-color);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: pageLoader 0.5s linear infinite;
+}
 /* Header */
 .header{
     padding: 12px 0 ;
@@ -116,7 +139,7 @@
 .header .nav.open{
     transform:translateX(0%);
 }
-.header .nav ul li a{
+.header .nav ul li .a{
     display: block;
     font-size: 25px;
     color: var(--white);
@@ -124,10 +147,12 @@
     text-transform: capitalize;
     transition: color 0.3s ease;
 }
-.header .nav ul li a:hover{
+.header .nav ul li .a:hover{
     color: var(--main-color);
 }
-
+.header .nav ul li .a.active{
+    color: var(--main-color);
+}
 /* Home section */
 .home-section{
     position: relative;

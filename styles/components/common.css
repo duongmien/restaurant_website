@@ -116,7 +116,15 @@ ul {
     transform:translate(-50%,-50%)  rotate(360deg) ;
   }
 }
-
+@keyframes pageLoader {
+  0%,100%{
+    transform: translateX(-50px);
+  }
+  50%{
+    transform: translateX(50px);
+  }
+  
+}
 section{
   overflow: hidden;
 }
