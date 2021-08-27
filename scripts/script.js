@@ -1,4 +1,10 @@
 window.addEventListener("load",function(){
+    // Pageloader
+    document.querySelector(".page-loader").classList.add("fade-out");
+    setTimeout(function(){
+        document.querySelector(".page-loader").style.display="none";
+    },600)
+    // Animation scroll
     AOS.init(); 
 });
 

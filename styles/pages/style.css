@@ -21,6 +21,7 @@
     width: 100%;
     background-color: var(--dark);
     z-index: 9999;
+    transition: all 0.8s ease ;
 }
 .page-loader.fade-out{
     opacity: 0;
@@ -139,7 +140,7 @@
 .header .nav.open{
     transform:translateX(0%);
 }
-.header .nav ul li .a{
+.header .nav ul li a{
     display: block;
     font-size: 25px;
     color: var(--white);
@@ -147,10 +148,7 @@
     text-transform: capitalize;
     transition: color 0.3s ease;
 }
-.header .nav ul li .a:hover{
-    color: var(--main-color);
-}
-.header .nav ul li .a.active{
+.header .nav ul li a:hover{
     color: var(--main-color);
 }
 /* Home section */
